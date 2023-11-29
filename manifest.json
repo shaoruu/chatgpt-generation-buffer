@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Generation Buffer",
+  "description": "Buffer ChatGPT's response so you don't get distracted while reading!",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "js": ["src/content.ts"],
+      "matches": ["https://chat.openai.com/*"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png",
+    "48": "icon.png",
+    "16": "icon.png"
+  }
+}
